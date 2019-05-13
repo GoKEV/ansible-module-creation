@@ -1,0 +1,8 @@
+---
+# tasks file for module-bash
+
+- name: test our bash module
+  bashmodule:
+    dest: test.txt
+    state: upper
+

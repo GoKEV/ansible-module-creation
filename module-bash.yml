@@ -1,0 +1,14 @@
+---
+- name: Simple Playbook
+  hosts: local
+  gather_facts: no
+  connection: local
+
+  roles:
+  - module-bash
+
+#  tasks:
+#    - name: Debug some stuff
+#      debug: 
+#        msg: This is a debug
+#      delegate_to: local

@@ -1,0 +1,7 @@
+---
+# tasks file for module-perl
+
+- name: test our module
+  perlmodule: 
+#    arg1: one
+#    arg2: two

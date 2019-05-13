@@ -1,0 +1,16 @@
+#!/usr/bin/perl
+
+foreach $arg(@ARGV){
+	$count++;
+	$args.=<<ALLDONE;
+	{ "ARG$count":"$arg" },
+ALLDONE
+}
+
+$args =~ s/\,$//g;
+
+print<<ALLDONE;
+[
+$args
+]
+ALLDONE
